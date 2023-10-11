@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}API для отправки сообщений пользователю через telegram bot{% endblock title %}
+
+{% block content %}
+
+
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h1 class="display-4">API для отправки сообщений пользователю через telegram bot</h1>
+      <p class="lead my-4">
+        API-шлюз для отправки и получения сообщений в Telegram бот, на который подписан пользователь. Пользователи могут зарегистрироваться, связать свой пользовательский аккаунт Telegram с ботом и отправлять сообщения через наше API. Мы предоставляем простой и надежный способ интеграции с Telegram для обмена сообщениями, сохраняя привязку к конкретному пользователю.
+      </p>
+      <div class="d-flex flex-wrap">
+        <div class="position-relative">
+          <a href="#" class="btn btn-primary mr-3 mb-3">Документация</a>
+          <a href="#" class="btn btn-success mb-3 ">Помощь</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="{% static 'images/SMEHomeImage_4.png' %}" class="img-fluid" alt="SMEHomeImage">
+    </div>
+  </div>
+
+
+{% endblock content %}
