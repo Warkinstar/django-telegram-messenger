@@ -6,7 +6,7 @@ from accounts.models import UserMessage
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
-        fields = ["pk", "username", "email"]
+        fields = ["pk", "username", "email", "tg_user_id"]
 
 
 class UserMessageSerializer(serializers.HyperlinkedModelSerializer):

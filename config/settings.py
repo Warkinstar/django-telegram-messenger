@@ -219,3 +219,7 @@ REST_AUTH = {
     # 'REGISTER_SERIALIZER': 'dj_rest_auth.registration.serializers.RegisterSerializer',
     "REGISTER_SERIALIZER": "apis.registration.serializers.CustomRegisterSerializer",  # CustomRegister
 }
+
+
+# Telegram bot token
+TELEGRAM_BOT_TOKEN = "<your-telegram-bot-token>"
