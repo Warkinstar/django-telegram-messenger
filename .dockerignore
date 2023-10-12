@@ -1,0 +1,10 @@
+fly.toml
+.git/
+.gitignore
+*.sqlite3
+.env
+.venv/
+__pycache__/
+*.pyc
+.idea/
+

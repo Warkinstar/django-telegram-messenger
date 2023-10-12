@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["message-duplicator.fly.dev", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -229,7 +229,10 @@ REST_AUTH = {
 TELEGRAM_BOT_TOKEN = env.str("TELEGRAM_BOT_TOKEN", default="<your-telegram-bot-token>")
 
 # Security for production
-CSRF_TRUSTED_ORIGINS = ["https://*.fly.dev", "http://localhost:3000"]  # fly and react
+CSRF_TRUSTED_ORIGINS = [
+    "https://message-duplicator.fly.dev",
+    "http://localhost:3000",
+]  # fly and react
 
 SECURE_SSL_REDIRECT = env.bool(
     "DJANGO_SECURE_SSL_REDIRECT", default=True
