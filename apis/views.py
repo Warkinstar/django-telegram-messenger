@@ -1,7 +1,7 @@
 from rest_framework import generics, viewsets
 from .serializers import UserSerializer, UserMessageSerializer
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-from .permissions import IsAuthorOrReadOnly
+from .permissions import IsAuthorOrReadOnly, IsUserRequestUserOrReadOnly
 from django.contrib.auth import get_user_model
 from accounts.models import UserMessage
 import requests
@@ -15,6 +15,14 @@ class UserAPIViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
+
+
+class UserUpdateAPIView(
+    generics.RetrieveAPIView, generics.UpdateAPIView, generics.GenericAPIView
+):
+    queryset = get_user_model().objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsUserRequestUserOrReadOnly]
 
 
 class UserMessageAPIViewSet(viewsets.ModelViewSet):

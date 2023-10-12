@@ -9,7 +9,8 @@ router.register("user-messages", views.UserMessageAPIViewSet, basename="user-mes
 app_name = "apis"
 
 urlpatterns = [
-    path("", include(router.urls))
+    path("", include(router.urls)),
+    path("users/<pk>/update/", views.UserUpdateAPIView.as_view(), name="user-update"),
 ]
 
 # urlpatterns += router.urls
