@@ -14,7 +14,7 @@ tg_bot_token = settings.TELEGRAM_BOT_TOKEN
 class UserAPIViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAuthenticated]
 
 
 class UserMessageAPIViewSet(viewsets.ModelViewSet):
