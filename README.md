@@ -68,8 +68,7 @@ python manage.py runserver
 
 Вход:
 
-![Вход](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/Login.png)
-
+![Вход](https://raw.githubusercontent.com/Warkinstar/screenshots/main/Login.png)
 Телеграм Бот и отправка сообщений:
 
 ![Телеграм Бот](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/send_messages.png)
