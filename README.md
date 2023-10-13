@@ -11,7 +11,7 @@
 Project
 
 
-# Installing
+# Установка
 
 * Создаем виртуальное окружение
 ```
@@ -62,7 +62,9 @@ python manage.py runserver
 
 ### Использование
 
-Скриншоты.
+Регистрация:
+![Регистрация](https://drive.google.com/file/d/13mG9mM2uMAQeuKsFZ2jrGzczd0h2elGE/view?usp=sharing)
+
 
 
 
