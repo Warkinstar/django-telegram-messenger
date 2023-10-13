@@ -63,13 +63,16 @@ python manage.py runserver
 ### Использование
 
 Регистрация:
-![Регистрация](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/Login.png)
+
+![Регистрация](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/Registration.png)
 
 Вход:
-![Вход](https://storage.cloud.google.com/bucket-django-educa/django-telegram-messanger/Login.png)
 
-Телеграм Бот и отправка сообщений
-![Телеграм Бот](https://storage.cloud.google.com/bucket-django-educa/django-telegram-messanger/send_messages.png)
+![Вход](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/Login.png)
+
+Телеграм Бот и отправка сообщений:
+
+![Телеграм Бот](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/send_messages.png)
 
 
 ## Лицензия
