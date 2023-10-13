@@ -63,7 +63,7 @@ python manage.py runserver
 ### Использование
 
 Регистрация:
-![Регистрация](https://github.com/Warkinstar/screenshots/blob/main/django-telegram-messenger/Login.png?raw=true)
+![Регистрация](https://raw.githubusercontent.com/Warkinstar/screenshots/main/django-telegram-messenger/Login.png)
 
 Вход:
 ![Вход](https://storage.cloud.google.com/bucket-django-educa/django-telegram-messanger/Login.png)
